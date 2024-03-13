@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
-import ScaleData from '../../../data/Fclef';
+import ScaleData from '../../../data/Gclef';
 import styles from '@/styles/question.module.scss';
 
 const shuffleArray = (array) => {

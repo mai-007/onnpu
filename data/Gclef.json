@@ -1,140 +1,140 @@
 [
   {
     "id": 1,
-    "image": "Gclef/do_1.svg",
+    "image": "/Gclef/do_1.svg",
     "audio": "/audio/note1.mp3",
     "choices": ["レ", "ド", "ソ"],
     "correctAnswer": "ド"
   },
   {
     "id": 2,
-    "image": "Gclef/do.svg",
+    "image": "/Gclef/do.svg",
     "audio": "/audio/note2.mp3",
     "choices": ["ド", "ミ", "ファ"],
     "correctAnswer": "ド"
   },
   {
     "id": 3,
-    "image": "Gclef/do+1.svg",
+    "image": "/Gclef/do+1.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ラ", "ソ", "ド"],
     "correctAnswer": "ド"
   },
   {
     "id": 4,
-    "image": "Gclef/fa+1.svg",
+    "image": "/Gclef/fa+1.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ファ", "レ", "ド"],
     "correctAnswer": "ファ"
   },
   {
     "id": 5,
-    "image": "Gclef/fa.svg",
+    "image": "/Gclef/fa.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ミ", "ファ", "ソ"],
     "correctAnswer": "ファ"
   },
   {
     "id": 6,
-    "image": "Gclef/mi.svg",
+    "image": "/Gclef/mi.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ミ", "ソ", "ファ"],
     "correctAnswer": "ミ"
   },
   {
     "id": 7,
-    "image": "Gclef/mi+1.svg",
+    "image": "/Gclef/mi+1.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ファ", "ソ", "ミ"],
     "correctAnswer": "ミ"
   },
   {
     "id": 8,
-    "image": "Gclef/mi+2.svg",
+    "image": "/Gclef/mi+2.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ファ", "ソ", "ミ"],
     "correctAnswer": "ミ"
   },
   {
     "id": 9,
-    "image": "Gclef/ra-1.svg",
+    "image": "/Gclef/ra-1.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ソ", "ラ", "ド"],
     "correctAnswer": "ラ"
   },
   {
     "id": 10,
-    "image": "Gclef/ra+1.svg",
+    "image": "/Gclef/ra+1.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ラ", "ミ", "ソ"],
     "correctAnswer": "ラ"
   },
   {
     "id": 11,
-    "image": "Gclef/ra.svg",
+    "image": "/Gclef/ra.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ド", "ラ", "ファ"],
     "correctAnswer": "ラ"
   },
   {
     "id": 12,
-    "image": "Gclef/re+1.svg",
+    "image": "/Gclef/re+1.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ミ", "ソ", "ラ"],
     "correctAnswer": "ラ"
   },
   {
     "id": 13,
-    "image": "Gclef/re+2.svg",
+    "image": "/Gclef/re+2.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["レ", "ファ", "ラ"],
     "correctAnswer": "レ"
   },
   {
     "id": 14,
-    "image": "Gclef/re.svg",
+    "image": "/Gclef/re.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ド", "レ", "ミ"],
     "correctAnswer": "レ"
   },
   {
     "id": 15,
-    "image": "Gclef/shi.svg",
+    "image": "/Gclef/shi.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ド", "シ", "レ"],
     "correctAnswer": "シ"
   },
   {
     "id": 16,
-    "image": "Gclef/shi-1.svg",
+    "image": "/Gclef/shi-1.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["シ", "ソ", "ラ"],
     "correctAnswer": "シ"
   },
   {
     "id": 17,
-    "image": "Gclef/shi+1.svg",
+    "image": "/Gclef/shi+1.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ド", "シ", "ラ"],
     "correctAnswer": "シ"
   },
   {
     "id": 18,
-    "image": "Gclef/so.svg",
+    "image": "/Gclef/so.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ソ", "レ", "ファ"],
     "correctAnswer": "ソ"
   },
   {
     "id": 19,
-    "image": "Gclef/so+1.svg",
+    "image": "/Gclef/so+1.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ミ", "ソ", "ファ"],
     "correctAnswer": "ソ"
   },
   {
     "id": 20,
-    "image": "Gclef/so-1.svg",
+    "image": "/Gclef/so-1.svg",
     "audio": "/audio/note3.mp3",
     "choices": ["ソ", "ラ", "ファ"],
     "correctAnswer": "ソ"
