@@ -1,7 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import ScaleData from '../../data/scale.json';
+import ScaleData from '../../../data/Fclef';
+import styles from '@/styles/question.module.scss'
 
 // 配列をランダムにシャッフルする関数
 const shuffleArray = (array) => {
@@ -63,15 +64,23 @@ export default function Scale() {
   };
 
   return (
-    <div>
+    <>
       {currentFlashcard && (
         <div>
-          <img src={currentFlashcard.image} alt="Flashcard" />
+          <figure className={styles.image}>
+            <img src={currentFlashcard.image} alt="Flashcard" />
+          </figure>
           <p>{currentFlashcard.question}</p>
-          <ul>
+          <ul className={styles.ul}>
             {currentFlashcard.choices.map((choice, index) => (
-              <li key={index}>
-                <button onClick={() => handleAnswer(choice)} disabled={disableButtons}>{choice}</button>
+              <li 
+                key={index}
+                className={styles.li}
+              >
+                <button 
+                  className={styles.button}
+                  onClick={() => handleAnswer(choice)} disabled={disableButtons}>{choice}
+                </button>
               </li>
             ))}
           </ul>
@@ -83,6 +92,6 @@ export default function Scale() {
           )}
         </div>
       )}
-    </div>
+    </>
   );
 };

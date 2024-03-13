@@ -1,0 +1,17 @@
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 72px;
+  background: #fff;
+}
+
+.logo{
+  font-size: var(--font-lm);
+  font-family: var(--font-en);
+}
+
+.copy{
+  font-size: var(--font-ms);
+  font-family: var(--font-en);
+}

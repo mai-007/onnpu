@@ -1,0 +1,119 @@
+:root {
+  /* color */
+  --purple-10: #F2EFFF;
+  --purple-30: #C5B8F7;
+  --purple: #927AFF;
+  --yellow: #FFC670;
+  --pink-30: #F0C3D4;
+  --pink: #EA9FBA;
+  --orange-10: #FFD1C9;
+  --orange: #FC6049;
+  --green-10: #E5F4E0;
+  --green: #7EC665;
+  --blue-50: #89C7FF;
+  --blue: #2684FF;
+  --link: #1a73e8;
+  --visit: #551a8b;
+  --gray-10: #eeeeee;
+  --gray-25: #aaaaaa;
+  --gray-50: #707070;
+  --gray-75: #444444;
+  --black: #221429;
+
+
+  /* typography(font-size) */
+  --body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem); /* 16-18px */
+  --display: clamp(4.5rem, 1.83rem + 11.34vw, 10rem); /* 72-160 */
+  --heading1: clamp(2rem, 1.3rem + 3vw, 4rem); /* 32-64px */
+  --heading2: calc(var(--body) * 2); /* 24-27px */
+  --heading3: calc(var(--body) * 1.5); /* 19.2-21.6px */
+  --small-heading2: clamp(0.875rem, 4vw - 1rem, 1.6875rem); /* 14-27px */
+  --small-heading3: calc(var(--small-heading2) * 0.86); /* 12-23px */
+  --small-heading4: clamp(1rem, 0.904rem + 0.48vw, 1.25rem);
+
+  /* space */
+  --space-xs: clamp(1.25rem, 1rem + 0.98vw, 1.875rem); /* 20-30px */
+  --space-sm: calc(var(--space-xs) * 1.5); /* 30-45px */
+  --space-md: calc(var(--space-xs) * 2); /* 40-60px */
+  --space-lg: calc(var(--space-xs) * 3); /* 60-90px */
+  --space-xl: calc(var(--space-xs) * 4); /* 80-120px */
+  --space-jump: clamp(1.25rem, 0.35rem + 3.8vw, 3.75rem); /* 20-60px */
+
+ /* text-shadow */
+  --textShadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  /* box-shadow */
+  --box-shadow-xl: 0px 0px 5px 1px #e7e7e7,1px 0px 0px 1px #e7e7e7;
+}
+
+.link{
+  color: var(--link);
+  border-bottom: 1px solid var(--link);
+  &:visit{
+    color: var(--visit);
+    border-bottom: 1px solid var(--visit);
+  }
+}
+
+
+/* basic setting */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: var(--black);
+  font-family: "Noto Sans JP";
+  line-height: 1.8em;
+  padding: 2rem;
+  background: var(--purple-10);
+}
+main {
+  padding: 24px 24px;
+  max-width: 60rem;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: var(--heading1);
+  font-family: var(--font-baloo);
+}
+
+h2 {
+  font-size: var(--heading2);
+  font-family: var(--font-baloo);
+}
+
+h3 {
+  font-size: var(--heading3);
+  font-family: var(--font-baloo);
+}
+
+
+/* next/image */
+span > img {
+  transition: 0.2s;
+}
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+p,
+figure,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
