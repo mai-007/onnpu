@@ -61,6 +61,7 @@ html {
 }
 body {
   color: var(--black);
+  font-size: 1rem;
   font-family: "Noto Sans JP";
   line-height: 1.8em;
   padding: 2rem;

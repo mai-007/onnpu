@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
-import ScaleData from '../../../data/Gclef';
+import ScaleData from '../../../data/Fclef';
 import styles from '@/styles/question.module.scss';
 
 const shuffleArray = (array) => {
@@ -25,6 +25,7 @@ const Scale = () => {
   useEffect(() => {
     if (totalAttempts === 10) {
       setGameOver(true);
+      setDisableButtons(true); // ゲーム終了時にボタンを無効化
     } else {
       const shuffledAndSelectedData = shuffleArray(ScaleData).slice(0, 1);
       setCurrentFlashcard(shuffledAndSelectedData[0]);
@@ -51,22 +52,19 @@ const Scale = () => {
     };
     setGameResults([...gameResults, resultDetail]);
 
-    // setTotalAttempts(totalAttempts + 1); // ここで回答回数を更新しない
-
-    // ゲーム終了条件に達した場合
-    if (totalAttempts === 9) {
-      setGameOver(true);
-    }
+    setTotalAttempts(totalAttempts + 1);
   };
 
   const handleNextFlashcard = () => {
-    if (!gameOver) {
+    if (totalAttempts === 9) {
+      setGameOver(true);
+      setDisableButtons(true); // ゲーム終了時にボタンを無効化
+    } else {
       const shuffledAndSelectedData = shuffleArray(ScaleData).slice(0, 1);
       setCurrentFlashcard(shuffledAndSelectedData[0]);
       setIsCorrect(null);
       setShowAnswerMessage(false);
       setDisableButtons(false);
-      setTotalAttempts(totalAttempts + 1); // ここで回答回数を更新
     }
   };
 
@@ -96,7 +94,9 @@ const Scale = () => {
               {isCorrect
                 ? '正解しました！'
                 : `不正解です。正解は「${currentFlashcard.correctAnswer}」です。`}
-              <button onClick={handleNextFlashcard}>次の問題へ</button>
+              {!gameOver && (
+                <button onClick={handleNextFlashcard}>次の問題へ</button>
+              )}
             </p>
           )}
           {gameOver && (
