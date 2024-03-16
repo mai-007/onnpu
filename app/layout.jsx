@@ -6,8 +6,8 @@ import "@/styles/globals.css";
 
 
 export const metadata = {
-  title: "ONNPU|音階・楽譜をやさしく学べるサイト",
-  description: "未就学児〜大人まで簡単に音階・楽譜の読み方が学べます。",
+  title: "ONNPU|ト音記号とへ音記号マスターへの近道！ピアノ初心者必見のブラウザゲーム",
+  description: "音符を読むのが苦手？ ト音記号とへ音記号を楽しく覚えられるブラウザゲームで、楽譜をスラスラ読めるようになりましょう!"
 };
 
 export default function RootLayout({ children }) {
