@@ -2,7 +2,7 @@
   padding: 104px;
   text-align: center;
   @media (max-width:768px) {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
   }
 }
 
